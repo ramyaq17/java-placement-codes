@@ -1,0 +1,37 @@
+interface MD
+{
+    public abstract void t1();
+    public abstract void t2();
+    public abstract void t3();
+}
+abstract class Senior implements MD//absrt is necessary becoz t3 nvr complete in here
+{
+    public void t1()
+    {
+    System.out.println("task 1 completed");
+    }
+     public void t2()
+    {
+    System.out.println("task 2 completed");
+    }
+    public abstract void t3();
+}
+class Junior extends Senior
+{
+    public void t3()
+    {
+    System.out.println("task 3 completed");
+    }
+}
+
+public class Main
+{
+
+public static void main (String[] args) 
+{
+    MD j=new Junior();
+    j.t1();
+    j.t2();
+    j.t3();
+}
+}
