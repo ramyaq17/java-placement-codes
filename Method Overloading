@@ -1,0 +1,30 @@
+import java.util.*;
+class Instagram
+{
+    public void post()
+    {
+        System.out.print("posted");
+    }
+    public void post(int pos,String str)
+    {
+        System.out.println(pos+str);
+    }
+    public void story(int count)
+    {
+        System.out.println(count);
+    }
+    public void story(float count)
+    {
+        System.out.println(count);
+    }
+}
+public class Main
+{
+    public static void main (String[] args) {
+    Instagram insta=new Instagram();
+    insta.post();
+    insta.post(2,"fuckk");
+    insta.story(4);
+    insta.story(9.0f);
+}
+}
