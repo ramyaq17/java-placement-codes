@@ -1,0 +1,21 @@
+import java.util.*;
+abstract class Meta{
+    public void profile()
+    {
+        System.out.println("profile functions");
+    }
+    public abstract void chat();
+}
+class Instagram extends Meta{
+    public void chat()
+    {
+        System.out.println("chat enabled");
+    }
+}public class Main
+{
+public static void main (String[] args) {
+    Instagram insta=new Instagram();
+    insta.chat();
+    insta.profile();
+}
+}
