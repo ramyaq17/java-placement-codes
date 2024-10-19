@@ -1,0 +1,38 @@
+import java.util.*;
+class Meta
+{
+    public void chat()
+    {
+        System.out.println("ohhh who is here to chat-meta");
+    }
+ 
+}
+class Facebook extends Meta
+{
+
+    public void chat()
+    {
+    super.chat();
+    System.out.println("ohhh who is here to chat-fb");
+    }
+}
+class Insagram extends Meta
+{
+    public void chat()
+    {
+        super.chat();
+        System.out.println("ohhh who is here to chat-insta");
+    }
+}
+
+public class Main
+{
+    public static void main (String[] args) {
+    Meta m=new Meta();
+    m.chat();
+    Facebook fb=new Facebook();
+    fb.chat();
+    Insagram in=new Insagram();
+    in.chat();
+}
+}
