@@ -1,0 +1,27 @@
+import java.util.*;
+abstract class Senior{
+    public void t1()
+    {
+        System.out.println("task 1 completed");
+    }
+    public void t2()
+    {
+        System.out.println("task 2 completed");
+    }
+    public abstract void t3();
+}
+class Junior extends Senior{
+    public void t3()
+    {
+        System.out.println("task 3 completed");
+    }
+}
+public class Main
+{
+public static void main (String[] args) {
+    Junior j=new Junior();
+    j.t1();
+    j.t2();
+    j.t3();
+}
+}
